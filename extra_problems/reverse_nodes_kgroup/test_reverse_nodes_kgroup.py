@@ -25,12 +25,11 @@ def list_to_array(head):
 def test_reverse_nodes_kgroup(klass):
     instance = klass()
     try:
-        # Example 1: k = 3
+
         l1 = array_to_list([1, 2, 3, 4, 5, 6, 7])
         res1 = instance.reverse_k_group(l1, 3)
         assert list_to_array(res1) == [3, 2, 1, 6, 5, 4, 7]
 
-        # Example 2: k = 4
         l2 = array_to_list([1, 2, 3, 4, 5, 6, 7])
         res2 = instance.reverse_k_group(l2, 4)
         assert list_to_array(res2) == [4, 3, 2, 1, 5, 6, 7]

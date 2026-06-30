@@ -8,6 +8,6 @@ def test_number_of_one_bits(klass):
     try:
         assert instance.number_of_one_bits(3) == 2
         assert instance.number_of_one_bits(8) == 1
-        assert instance.number_of_one_bits(-5) == 31  # -5 has 31 set bits in 32-bit representation
+        assert instance.number_of_one_bits(-5) == 31
     except NotImplementedError:
         pytest.skip("NumberOfOneBits is not implemented yet")

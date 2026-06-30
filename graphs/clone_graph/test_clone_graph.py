@@ -6,9 +6,7 @@ from graphs.clone_graph.solution import CloneGraphSolution
 def test_clone_graph(klass):
     instance = klass()
     try:
-        # Create a simple graph: 1 - 2
-        #                       |   |
-        #                       4 - 3
+
         n1 = Node(1)
         n2 = Node(2)
         n3 = Node(3)

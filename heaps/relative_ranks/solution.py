@@ -5,11 +5,10 @@ class RelativeRanksSolution:
     def find_relative_ranks(self, score: List[int]) -> List[str]:
         n = len(score)
         res = [""] * n
-        
-        # Max-heap in Python can be created by negating the values
+
         pq = [(-s, i) for i, s in enumerate(score)]
         heapq.heapify(pq)
-        
+
         position = 1
         while pq:
             s, player_index = heapq.heappop(pq)
@@ -22,5 +21,5 @@ class RelativeRanksSolution:
             else:
                 res[player_index] = str(position)
             position += 1
-            
+
         return res

@@ -2,7 +2,7 @@ from typing import List, Set
 
 class RedundantConnectionSolution:
     def find_redundant_connection(self, edges: List[List[int]]) -> List[int]:
-        adj_list = [set() for _ in range(1001)]  # MAX 1000 nodes
+        adj_list = [set() for _ in range(1001)]
 
         for edge in edges:
             first, second = edge[0], edge[1]

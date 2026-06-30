@@ -3,7 +3,7 @@ class QueueWithStacks:
         """
         Implement a MyQueue class using two stacks.
         """
-        # You can initialize your data structures here
+
         raise NotImplementedError("Not implemented yet")
 
     def add(self, value: int) -> None:

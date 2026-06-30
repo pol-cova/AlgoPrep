@@ -28,7 +28,7 @@ class MinHeap:
 
     def extract_min(self) -> int:
         if self.size <= 0:
-            return -2147483648  # Integer.MIN_VALUE in Java
+            return -2147483648
         popped = self.heap[0]
         self.size -= 1
         self.heap[0] = self.heap[self.size]
@@ -39,13 +39,13 @@ class MinHeap:
         if not self._is_leaf(i):
             left = self._left_child_index(i)
             right = self._right_child_index(i)
-            # Find the smallest among node and its children
+
             smallest = i
             if left < self.size and self.heap[left] < self.heap[smallest]:
                 smallest = left
             if right < self.size and self.heap[right] < self.heap[smallest]:
                 smallest = right
-            
+
             if smallest != i:
                 self._swap(i, smallest)
                 self._min_heapify(smallest)

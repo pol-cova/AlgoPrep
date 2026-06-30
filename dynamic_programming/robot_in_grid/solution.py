@@ -6,7 +6,7 @@ class RobotInGridSolution:
         if not grid or not grid[0]:
             return None
         path = []
-        # Copy the grid so we don't modify the input in-place during tests
+
         grid_copy = [row[:] for row in grid]
         if self._get_path(grid_copy, 0, 0, path):
             path.reverse()

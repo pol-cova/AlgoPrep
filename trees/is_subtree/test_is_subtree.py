@@ -14,7 +14,6 @@ def test_is_subtree(klass):
         first.left.right = Node(3)
         first.left.left.left = Node(8)
 
-        # Non-subtree
         second_false = Node(4)
         second_false.left = Node(2)
         second_false.right = Node(7)
@@ -22,7 +21,6 @@ def test_is_subtree(klass):
 
         assert instance.is_subtree(first, second_false) is False
 
-        # Subtree
         second_true = Node(5)
         second_true.left = Node(1)
         second_true.right = Node(3)

@@ -6,10 +6,9 @@ from stacks_queues.sort_stack.solution import SortStackSolution
 def test_sort_stack(klass):
     instance = klass()
     try:
-        stack = [1, 5, 2, 4]  # top is 4
+        stack = [1, 5, 2, 4]
         sorted_stack = instance.sort(stack)
-        
-        # The top of sorted_stack must be 1 (smallest element)
+
         assert sorted_stack.pop() == 1
         assert sorted_stack.pop() == 2
         assert sorted_stack.pop() == 4

@@ -7,7 +7,7 @@ from dynamic_programming.binary_tree_max_path_sum.solution import BinaryTreeMaxP
 def test_binary_tree_max_path_sum(klass):
     instance = klass()
     try:
-        # Example 1
+
         root1 = TreeNode(2)
         root1.left = TreeNode(1)
         root1.right = TreeNode(3)
@@ -16,7 +16,6 @@ def test_binary_tree_max_path_sum(klass):
 
         assert instance.max_path_sum(root1) == 6
 
-        # Example 2
         root2 = TreeNode(-12)
         root2.left = TreeNode(5)
         root2.right = TreeNode(3)

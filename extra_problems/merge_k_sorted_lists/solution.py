@@ -6,7 +6,6 @@ class MergeKSortedListsSolution:
         if not lists:
             return None
 
-        # Work on a copy of the list of heads to avoid modifying the input parameter in-place
         lists_copy = list(lists)
         offset = 1
         n = len(lists_copy)
@@ -20,7 +19,7 @@ class MergeKSortedListsSolution:
     def merge_two_lists(self, list1: Optional[Node], list2: Optional[Node]) -> Optional[Node]:
         dummy = Node(-2147483648)
         current = dummy
-        
+
         while list1 is not None and list2 is not None:
             if list1.value <= list2.value:
                 current.next = list1

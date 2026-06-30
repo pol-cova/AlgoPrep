@@ -8,11 +8,10 @@ def test_group_anagrams(klass):
     try:
         words = ["saco", "arresto", "programa", "rastreo", "caso"]
         result = instance.group_anagrams(words)
-        
-        # Sort internal lists and the outer list to compare regardless of order
+
         sorted_result = sorted([sorted(group) for group in result])
         expected = sorted([sorted(["saco", "caso"]), sorted(["arresto", "rastreo"]), sorted(["programa"])])
-        
+
         assert sorted_result == expected
     except NotImplementedError:
         pytest.skip("GroupAnagrams is not implemented yet")
