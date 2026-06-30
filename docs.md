@@ -27,7 +27,7 @@ Use this format in your notes:
 
 ```text
 Now:
-- ch03_ArraysStringsHashTables/_02_two_sum
+- arrays_hashing/two_sum
 
 Review:
 - problems solved with hints or slow attempts
