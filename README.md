@@ -4,6 +4,11 @@ Python practice problems for data structures and algorithms.
 
 Exercises are grouped by topic in chapter folders. Each exercise includes a starter file and pytest tests.
 
+Use this repo to practice two skills:
+
+- implementing common DSA problems
+- recognizing the pattern a problem is testing
+
 ## Setup
 
 ```bash
@@ -31,3 +36,11 @@ pytest ch03_ArraysStringsHashTables/_01_is_unique/
 1. Open an exercise file.
 2. Replace `raise NotImplementedError` with your solution.
 3. Run the matching test file.
+
+## Study resources
+
+- [PATTERNS.md](PATTERNS.md): problem-to-pattern index
+- [INTERVIEW_PATTERNS.md](INTERVIEW_PATTERNS.md): recognition clues for common interview patterns
+- [PROGRESS.md](PROGRESS.md): tracker for solved, review, and mastered problems
+- [drills/](drills): topic and mixed practice lists
+- [templates/problem_README.md](templates/problem_README.md): template for documenting each exercise
