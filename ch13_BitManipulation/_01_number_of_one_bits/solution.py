@@ -1,0 +1,9 @@
+class NumberOfOneBitsSolution:
+    def number_of_one_bits(self, n: int) -> int:
+        # Mask to 32 bits to prevent infinite loop on negative integers
+        n = n & 0xffffffff
+        bit_count = 0
+        while n != 0:
+            bit_count += (n & 1)
+            n >>= 1
+        return bit_count
