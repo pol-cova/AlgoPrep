@@ -58,7 +58,6 @@ pytest ch03_ArraysStringsHashTables/_02_two_sum/
 
 ## Repo Files
 
-- [`PATTERNS.md`](PATTERNS.md): common patterns
-- [`PROGRESS.md`](PROGRESS.md): practice tracker
+- [`docs.md`](docs.md): pattern cues and practice tracker format
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): how to add or update problems
 - [`LICENSE`](LICENSE): MIT license
