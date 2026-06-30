@@ -39,8 +39,6 @@ pytest ch03_ArraysStringsHashTables/_01_is_unique/
 
 ## Study resources
 
-- [PATTERNS.md](PATTERNS.md): problem-to-pattern index
-- [INTERVIEW_PATTERNS.md](INTERVIEW_PATTERNS.md): recognition clues for common interview patterns
-- [PROGRESS.md](PROGRESS.md): tracker for solved, review, and mastered problems
-- [drills/](drills): topic and mixed practice lists
+- [PATTERNS.md](PATTERNS.md): quick pattern recognition guide
+- [PROGRESS.md](PROGRESS.md): simple practice tracker
 - [templates/problem_README.md](templates/problem_README.md): template for documenting each exercise

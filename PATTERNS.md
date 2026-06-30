@@ -1,101 +1,117 @@
 # Patterns
 
-Use this index to practice recognizing the underlying pattern before writing code.
+Use this before coding. Read the problem, guess the pattern, then implement.
 
-## Arrays, Strings, and Hash Tables
+## Quick Cues
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch03_ArraysStringsHashTables/_01_is_unique` | Set membership | duplicate detection, character scan |
-| `ch03_ArraysStringsHashTables/_02_two_sum` | Hash map complement lookup | one-pass lookup, target sum |
-| `ch03_ArraysStringsHashTables/_03_group_anagrams` | Frequency signature | grouping, normalized key |
-| `ch03_ArraysStringsHashTables/_04_zero_matrix` | Matrix marking | in-place state, rows and columns |
-| `ch14_ExtraProblems/_04_longest_unique_substring` | Sliding window | longest contiguous substring, uniqueness |
+| If the prompt says... | Try... |
+|---|---|
+| sorted input | binary search or two pointers |
+| pair, target, complement | hash map |
+| longest/shortest contiguous range | sliding window |
+| counts, duplicates, groups | hash map or frequency map |
+| nested or matching items | stack |
+| top k or kth largest/smallest | heap |
+| tree height, path, ancestor | DFS |
+| levels or shortest unweighted path | BFS |
+| connected components | DFS, BFS, or Union Find |
+| dependencies or ordering | topological sort |
+| all subsets, combos, permutations | backtracking |
+| best/min/max after choices | dynamic programming |
+| prefixes or autocomplete | trie |
+| bits, xor, no arithmetic | bit manipulation |
 
-## Linked Lists
+## Common Patterns
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch04_LinkedLists/_01_remove_dups` | Set membership | duplicate detection, pointer traversal |
-| `ch04_LinkedLists/_02_merge__two_sorted_lists` | Two pointers | sorted inputs, merge step |
-| `ch04_LinkedLists/_03_nth_node_to_last` | Fast and slow pointers | fixed gap, single pass |
-| `ch04_LinkedLists/_04_add_two_numbers` | Carry simulation | digit-by-digit traversal |
-| `ch04_LinkedLists/_05_swap_nodes_in_pairs` | Pointer rewiring | local linked-list mutation |
-| `ch14_ExtraProblems/_01_merge_k_sorted_lists` | Heap merge | k sorted inputs, repeatedly choose minimum |
-| `ch14_ExtraProblems/_03_reverse_nodes_kgroup` | Pointer rewiring | grouped reversal, fixed-size chunks |
+- **Hash map**: fast lookup, counts, duplicates, complements.
+- **Two pointers**: sorted input, merging, pair search, linked-list gaps.
+- **Sliding window**: contiguous subarray or substring with a moving condition.
+- **Stack**: most recent unresolved item matters.
+- **BFS**: level order or shortest path in an unweighted graph.
+- **DFS**: explore branches, trees, components, or paths.
+- **Backtracking**: generate all valid answers.
+- **Dynamic programming**: repeated subproblems with choose/skip or min/max decisions.
+- **Heap**: repeatedly need the current smallest/largest.
+- **Union Find**: merge groups and ask whether items are connected.
 
-## Stacks and Queues
+## Problems By Pattern
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch05_StacksQueues/_01_queue_with_stacks` | Two-stack queue | amortized transfer |
-| `ch05_StacksQueues/_02_valid_parenthesis` | Stack matching | nested delimiters |
-| `ch05_StacksQueues/_03_sort_stack` | Auxiliary stack | constrained sorting |
-| `ch05_StacksQueues/_04_stack_min` | Monotonic/min tracking | constant-time minimum |
+### Hash Map / Set
 
-## Trees
+- `ch03_ArraysStringsHashTables/_01_is_unique`
+- `ch03_ArraysStringsHashTables/_02_two_sum`
+- `ch03_ArraysStringsHashTables/_03_group_anagrams`
+- `ch04_LinkedLists/_01_remove_dups`
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch06_Trees/_01_invert_binary_tree` | DFS recursion | swap children |
-| `ch06_Trees/_02_list_of_depths` | BFS by level | level grouping |
-| `ch06_Trees/_03_maximum_depth` | DFS recursion | height aggregation |
-| `ch06_Trees/_04_validate_bst` | DFS with bounds | ordered constraints |
-| `ch06_Trees/_05_is_subtree` | Tree matching | recursive equality checks |
-| `ch06_Trees/_06_first_common_ancestor` | LCA recursion | split paths |
-| `ch12_DynamicProgramming/_05_binary_tree_max_path_sum` | Tree DP | best path through node |
+### Two Pointers / Linked Lists
 
-## Graphs
+- `ch04_LinkedLists/_02_merge__two_sorted_lists`
+- `ch04_LinkedLists/_03_nth_node_to_last`
+- `ch04_LinkedLists/_04_add_two_numbers`
+- `ch04_LinkedLists/_05_swap_nodes_in_pairs`
+- `ch14_ExtraProblems/_03_reverse_nodes_kgroup`
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch07_Graphs/_01_route_between_nodes` | BFS/DFS reachability | path existence |
-| `ch07_Graphs/_02_clone_graph` | DFS/BFS with visited map | copy graph, cycles |
-| `ch07_Graphs/_03_build_order` | Topological sort | dependencies, ordering |
-| `ch07_Graphs/_04_number_of_provinces` | Connected components | adjacency matrix |
-| `ch07_Graphs/_05_redundant_connection` | Union find | cycle detection in undirected graph |
+### Sliding Window
 
-## Heaps and Priority Queues
+- `ch14_ExtraProblems/_04_longest_unique_substring`
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch08_Heaps/_00_min_heap` | Heap implementation | parent-child ordering |
-| `ch08_Heaps/_01_kth_largest_element` | Heap selection | kth element |
-| `ch08_Heaps/_02_top_k_frequent_elements` | Frequency map plus heap/bucket | top k by count |
-| `ch08_Heaps/_03_relative_ranks` | Sorting or heap ranking | rank assignment |
+### Stack / Queue
 
-## Tries
+- `ch05_StacksQueues/_01_queue_with_stacks`
+- `ch05_StacksQueues/_02_valid_parenthesis`
+- `ch05_StacksQueues/_03_sort_stack`
+- `ch05_StacksQueues/_04_stack_min`
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch09_Tries/_00_trie` | Prefix tree | insert/search/prefix |
-| `ch09_Tries/_01_title_suggestions` | Trie autocomplete | prefix suggestions |
-| `ch09_Tries/_02_word_search` | Backtracking plus trie | grid search, shared prefixes |
+### Trees
 
-## Sorting and Searching
+- `ch06_Trees/_01_invert_binary_tree`
+- `ch06_Trees/_02_list_of_depths`
+- `ch06_Trees/_03_maximum_depth`
+- `ch06_Trees/_04_validate_bst`
+- `ch06_Trees/_05_is_subtree`
+- `ch06_Trees/_06_first_common_ancestor`
+- `ch12_DynamicProgramming/_05_binary_tree_max_path_sum`
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch10_Sorting/_00_sorting` | Sorting algorithms | compare and partition |
-| `ch11_Searching/_00_binary_search` | Binary search | sorted input, monotonic condition |
+### Graphs
 
-## Dynamic Programming and Backtracking
+- `ch07_Graphs/_01_route_between_nodes`
+- `ch07_Graphs/_02_clone_graph`
+- `ch07_Graphs/_03_build_order`
+- `ch07_Graphs/_04_number_of_provinces`
+- `ch07_Graphs/_05_redundant_connection`
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch12_DynamicProgramming/_01_robot_in_grid` | Grid DP/backtracking | path through obstacles |
-| `ch12_DynamicProgramming/_02_set_subsets` | Backtracking | include/exclude choices |
-| `ch12_DynamicProgramming/_03_generate_parenthesis` | Backtracking | constrained generation |
-| `ch12_DynamicProgramming/_04_maximum_subarray` | Kadane's algorithm | best contiguous subarray |
-| `ch14_ExtraProblems/_02_word_break` | DP over prefixes | dictionary segmentation |
-| `ch14_ExtraProblems/_05_house_robber` | Linear DP | choose/skip adjacent items |
-| `ch14_ExtraProblems/_06_coin_change` | Unbounded knapsack DP | minimum coins, repeated choices |
+### Heap
 
-## Bit Manipulation
+- `ch08_Heaps/_00_min_heap`
+- `ch08_Heaps/_01_kth_largest_element`
+- `ch08_Heaps/_02_top_k_frequent_elements`
+- `ch08_Heaps/_03_relative_ranks`
+- `ch14_ExtraProblems/_01_merge_k_sorted_lists`
 
-| Problem | Primary pattern | Secondary clues |
-|---|---|---|
-| `ch13_BitManipulation/_01_number_of_one_bits` | Bit counting | shift or clear lowest set bit |
-| `ch13_BitManipulation/_02_reverse_int` | Digit simulation | overflow, sign handling |
-| `ch13_BitManipulation/_03_number_conversion` | XOR difference | count changed bits |
-| `ch13_BitManipulation/_04_sum_integers` | Bitwise addition | carry without `+` |
+### Trie
+
+- `ch09_Tries/_00_trie`
+- `ch09_Tries/_01_title_suggestions`
+- `ch09_Tries/_02_word_search`
+
+### Search / Sort
+
+- `ch10_Sorting/_00_sorting`
+- `ch11_Searching/_00_binary_search`
+
+### Backtracking / Dynamic Programming
+
+- `ch12_DynamicProgramming/_01_robot_in_grid`
+- `ch12_DynamicProgramming/_02_set_subsets`
+- `ch12_DynamicProgramming/_03_generate_parenthesis`
+- `ch12_DynamicProgramming/_04_maximum_subarray`
+- `ch14_ExtraProblems/_02_word_break`
+- `ch14_ExtraProblems/_05_house_robber`
+- `ch14_ExtraProblems/_06_coin_change`
+
+### Bit Manipulation
+
+- `ch13_BitManipulation/_01_number_of_one_bits`
+- `ch13_BitManipulation/_02_reverse_int`
+- `ch13_BitManipulation/_03_number_conversion`
+- `ch13_BitManipulation/_04_sum_integers`
