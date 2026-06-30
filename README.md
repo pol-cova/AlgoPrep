@@ -1,15 +1,16 @@
-# kata
+# AlgoPrep
 
-Python practice problems for data structures and algorithms.
+Simple Python practice repo for data structures, algorithms, and interview prep.
 
-Exercises are grouped by topic in chapter folders. Each exercise includes a starter file and pytest tests.
+Each problem folder usually has:
 
-Use this repo to practice two skills:
-
-- implementing common DSA problems
-- recognizing the pattern a problem is testing
+- a starter implementation file, for example `two_sum.py`
+- a matching `test_*.py` file
+- a `solution.py` file to compare after you try it
 
 ## Setup
+
+Use Python 3.10 or newer.
 
 ```bash
 python3 -m venv .venv
@@ -17,28 +18,56 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Run tests
+## Run Tests
 
-Run everything:
+Run all tests:
 
 ```bash
 pytest
 ```
 
-Run one exercise:
+Run one problem:
 
 ```bash
-pytest ch03_ArraysStringsHashTables/_01_is_unique/
+pytest ch03_ArraysStringsHashTables/_02_two_sum/
 ```
 
-## Practice flow
+## How To Practice
 
-1. Open an exercise file.
-2. Replace `raise NotImplementedError` with your solution.
-3. Run the matching test file.
+1. Pick a topic folder, such as arrays, linked lists, trees, graphs, or dynamic programming.
+2. Open the problem implementation file.
+3. Try solving it without looking at `solution.py`.
+4. Run that problem's tests.
+5. If stuck, read the test cases first, then compare with `solution.py`.
+6. Write down the pattern you used so you can recognize it faster next time.
 
-## Study resources
+## Good Group Routine
 
-- [PATTERNS.md](PATTERNS.md): quick pattern recognition guide
-- [PROGRESS.md](PROGRESS.md): simple practice tracker
-- [templates/problem_README.md](templates/problem_README.md): template for documenting each exercise
+For interview prep with friends:
+
+1. Choose 2 or 3 problems for a session.
+2. Timebox each problem to 25-35 minutes.
+3. After each attempt, explain the approach out loud.
+4. Discuss time and space complexity.
+5. Compare solutions and note the pattern.
+
+## Helpful Files
+
+- `PATTERNS.md`: quick guide for recognizing common problem patterns
+- `PROGRESS.md`: simple tracker for what has been practiced
+- `templates/problem_README.md`: template for documenting new problems
+
+## Topics
+
+- Arrays, strings, and hash tables
+- Linked lists
+- Stacks and queues
+- Trees
+- Graphs
+- Heaps
+- Tries
+- Sorting
+- Searching
+- Dynamic programming
+- Bit manipulation
+- Extra mixed problems
