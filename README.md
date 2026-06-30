@@ -18,46 +18,43 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Run Tests
+## Usage
 
-Run all tests:
+Run every test from the repo root:
 
 ```bash
 pytest
 ```
 
-Run one problem:
+Work on one problem:
 
 ```bash
-pytest arrays_hashing/two_sum/
+cd arrays_hashing/two_sum
+pytest
 ```
 
 ## Practice
 
-1. Pick a problem from the folder map.
+1. Pick a topic folder, then enter a problem folder.
 2. Solve the starter file before opening `solution.py`.
-3. Run the matching tests.
-4. Review the pattern and time/space complexity.
+3. Run `pytest` from that problem folder.
+4. Write down the pattern and time/space complexity.
 
 ## Folder Map
 
-| Topic | Folder | Problems covered |
-| --- | --- | --- |
-| Arrays, strings, hash tables | [`arrays_hashing`](arrays_hashing) | Is Unique, Two Sum, Group Anagrams, Zero Matrix |
-| Linked lists | [`linked_lists`](linked_lists) | Linked list implementation, Remove Duplicates, Merge Two Sorted Lists, Nth Node To Last, Add Two Numbers, Swap Nodes In Pairs |
-| Stacks and queues | [`stacks_queues`](stacks_queues) | Stack and queue implementation, Queue With Stacks, Valid Parentheses, Sort Stack, Stack Min |
-| Trees | [`trees`](trees) | Binary tree helpers, Invert Binary Tree, List Of Depths, Maximum Depth, Validate BST, Is Subtree, First Common Ancestor |
-| Graphs | [`graphs`](graphs) | Graph search helpers, Route Between Nodes, Clone Graph, Build Order, Number Of Provinces, Redundant Connection |
-| Heaps | [`heaps`](heaps) | Min Heap, Kth Largest Element, Top K Frequent Elements, Relative Ranks |
-| Tries | [`tries`](tries) | Trie implementation, Title Suggestions, Word Search |
-| Sorting | [`sorting`](sorting) | Bubble Sort, Selection Sort, Merge Sort, Quick Sort |
-| Searching | [`searching`](searching) | Binary Search |
-| Dynamic programming | [`dynamic_programming`](dynamic_programming) | Robot In Grid, Set Subsets, Generate Parentheses, Maximum Subarray, Binary Tree Maximum Path Sum |
-| Bit manipulation | [`bit_manipulation`](bit_manipulation) | Number Of One Bits, Reverse Integer, Number Conversion, Sum Integers |
-| Extra problems | [`extra_problems`](extra_problems) | Merge K Sorted Lists, Word Break, Reverse Nodes In K Group, Longest Unique Substring, House Robber, Coin Change |
+| Topic | Folder | Common patterns | Problems |
+| --- | --- | --- | --- |
+| Arrays, strings, hash tables | [`arrays_hashing`](arrays_hashing) | hash map, sets, frequency counts | Is Unique, Two Sum, Group Anagrams, Zero Matrix |
+| Linked lists | [`linked_lists`](linked_lists) | pointers, dummy nodes, runner technique | Linked list implementation, Remove Duplicates, Merge Two Sorted Lists, Nth Node To Last, Add Two Numbers, Swap Nodes In Pairs |
+| Stacks and queues | [`stacks_queues`](stacks_queues) | stack, queue, monotonic thinking | Stack and queue implementation, Queue With Stacks, Valid Parentheses, Sort Stack, Stack Min |
+| Trees | [`trees`](trees) | DFS, recursion, level order | Binary tree helpers, Invert Binary Tree, List Of Depths, Maximum Depth, Validate BST, Is Subtree, First Common Ancestor |
+| Graphs | [`graphs`](graphs) | BFS, DFS, topological sort, Union Find | Graph search helpers, Route Between Nodes, Clone Graph, Build Order, Number Of Provinces, Redundant Connection |
+| Heaps | [`heaps`](heaps) | min heap, top k, ranking | Min Heap, Kth Largest Element, Top K Frequent Elements, Relative Ranks |
+| Tries | [`tries`](tries) | prefixes, autocomplete, grid search | Trie implementation, Title Suggestions, Word Search |
+| Sorting | [`sorting`](sorting) | comparison sort, divide and conquer | Bubble Sort, Selection Sort, Merge Sort, Quick Sort |
+| Searching | [`searching`](searching) | binary search | Binary Search |
+| Dynamic programming | [`dynamic_programming`](dynamic_programming) | choose/skip, memoization, max/min subproblems | Robot In Grid, Set Subsets, Generate Parentheses, Maximum Subarray, Binary Tree Maximum Path Sum |
+| Bit manipulation | [`bit_manipulation`](bit_manipulation) | bits, masks, xor | Number Of One Bits, Reverse Integer, Number Conversion, Sum Integers |
+| Extra problems | [`extra_problems`](extra_problems) | mixed interview patterns | Merge K Sorted Lists, Word Break, Reverse Nodes In K Group, Longest Unique Substring, House Robber, Coin Change |
 
-## Repo Files
-
-- [`docs.md`](docs.md): pattern cues and practice tracker format
-- [`CONTRIBUTING.md`](CONTRIBUTING.md): how to add or update problems
-- [`LICENSE`](LICENSE): MIT license
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) to add problems. This repo uses the [`MIT License`](LICENSE).
