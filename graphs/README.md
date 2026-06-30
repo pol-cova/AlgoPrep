@@ -8,3 +8,4 @@
 | Build Order | [`build_order`](build_order) |
 | Number Of Provinces | [`number_of_provinces`](number_of_provinces) |
 | Redundant Connection | [`redundant_connection`](redundant_connection) |
+| Number Of Islands | [`number_of_islands`](number_of_islands) |

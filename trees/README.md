@@ -9,3 +9,4 @@
 | Validate BST | [`validate_bst`](validate_bst) |
 | Is Subtree | [`is_subtree`](is_subtree) |
 | First Common Ancestor | [`first_common_ancestor`](first_common_ancestor) |
+| Binary Tree Level Order Traversal | [`binary_tree_level_order_traversal`](binary_tree_level_order_traversal) |

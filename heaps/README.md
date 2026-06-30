@@ -6,3 +6,4 @@
 | Kth Largest Element | [`kth_largest_element`](kth_largest_element) |
 | Top K Frequent Elements | [`top_k_frequent_elements`](top_k_frequent_elements) |
 | Relative Ranks | [`relative_ranks`](relative_ranks) |
+| K Closest Points | [`k_closest_points`](k_closest_points) |
